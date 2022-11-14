@@ -1,9 +1,13 @@
 package net.absoft.mortalwombat;
 
 public class AgeChecker {
-    private final int MIN_AGE = 21;
+    private int minAge = 21;
 
     public boolean canPlayGame(int age) {
-        return age >= this.MIN_AGE;
+        return age >= this.minAge;
+    }
+
+    public void setMinAge(int minAge) {
+        this.minAge = minAge;
     }
 }
